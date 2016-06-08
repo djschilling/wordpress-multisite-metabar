@@ -1,0 +1,19 @@
+#ms_navbar {
+	color: blue;
+	height: 32px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: red;
+	z-index: 99999;
+}
+
+#ms_navbar ul {
+	text-align: left;
+	list-style: none;
+}
+
+#ms_navbar li {
+	float: left;
+}
