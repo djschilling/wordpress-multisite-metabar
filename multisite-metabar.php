@@ -1,13 +1,12 @@
 <?php
 /**
-Plugin Name: Multisite Metabar
-Plugin URI:  http://URI_Of_Page_Describing_Plugin_and_Updates
-Description: Shows metabar for multisite installations
-Author:      David Schilling
-License:     Apache License, Version 2.0
-License URI: http://www.apache.org/licenses/LICENSE-2.0
-*
-*/
+ * Plugin Name: Multisite Metabar
+ * Plugin URI:  https://github.com/pongo710/wordpress-multisite-metabar
+ * Description: Shows metabar for multisite installations
+ * Author:      David Schilling
+ * License:     Apache License, Version 2.0
+ * License URI: http://www.apache.org/licenses/LICENSE-2.0
+ */
 
 function register_custom_scripts() {
 	wp_register_style( 'mm_css', plugins_url('/css/app.css', __FILE__));
@@ -29,4 +28,3 @@ function insert_multisite_metabar() {
 }
 
 add_action('wp_footer', 'insert_multisite_metabar');
-?>
