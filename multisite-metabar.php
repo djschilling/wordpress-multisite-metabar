@@ -9,3 +9,4 @@
  */
 
 require_once 'src/render.php';
+require_once 'src/admin.php';
