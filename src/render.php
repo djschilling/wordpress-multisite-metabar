@@ -9,7 +9,7 @@ add_action('wp_enqueue_scripts', 'register_custom_scripts');
 
 function insert_multisite_metabar()
 {
-    $sites_shown = get_option('sites_shown');
+    $sites_shown = get_site_option('mm_metabar');
     $sites_shown_array = explode(',', $sites_shown);
 
     ?>
