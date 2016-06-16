@@ -1,19 +1,47 @@
-#ms_navbar {
-	color: blue;
-	height: 32px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: red;
-	z-index: 999999;
+#mm-nav {
+    color: white;
+    height: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #23282d;
+    z-index: 99999;
 }
 
-#ms_navbar ul {
-	text-align: left;
-	list-style: none;
+#mm-nav > ul {
+    text-align: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-#ms_navbar li {
-	float: left;
+#mm-nav > ul > li {
+    float: left;
+    cursor: pointer;
+}
+
+.mm-subnav-wrapper {
+    position: absolute;
+    background: #23282d;
+}
+
+.hide {
+    display:none;
+}
+
+.mm-subnav-wrapper.show {
+    display: inline;
+}
+
+.mm-subnav-wrapper ul {
+    position: relative;
+    clear: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mm-subnav-wrapper li {
+    float: none;
 }
